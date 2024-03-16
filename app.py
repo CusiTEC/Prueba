@@ -192,7 +192,7 @@ def mostrar_pagina1():
     if st.button('Realizar predicción'):
         
         respuesta = 0
-        resultado = model_prediction(x_input, miarbol)
+        resultado = int(model_prediction(x_input, miarbol))
         
         st.write('El resultado de la predicción es:', resultado)
         respuesta = resultado
